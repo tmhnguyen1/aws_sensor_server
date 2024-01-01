@@ -40,9 +40,9 @@ def data(pass_auth, device_id):  # listens to the data streamed from the sensor 
 			data = json.loads(request.data)
 			timestamp = datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%f')
 			print(f'received data: {timestamp}')
-			if not os.path.exists(base_dir + f'/data_raw/{device_id}'):
-				os.makedirs(base_dir + f'/data_raw/{device_id}')
-			filename = base_dir + f'/data_raw/{device_id}/{timestamp}.pkl'
+			if not os.path.exists(base_dir + f'/data/data_raw/{device_id}'):
+				os.makedirs(base_dir + f'/data/data_raw/{device_id}')
+			filename = base_dir + f'/data/data_raw/{device_id}/{timestamp}.pkl'
 			with open(filename, 'wb') as f:
 				pickle.dump(data['payload'], f)		
 		return "success"
