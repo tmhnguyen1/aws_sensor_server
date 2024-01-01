@@ -1,3 +1,3 @@
-# learning
+# aws_sesnsor_server
 
-This repository contains all the notebooks/codes I learned during free time at HKPC.
+This repository hosts a simple web server on AWS for streaming/batching sensor data from mobile device.
