@@ -2,3 +2,4 @@ __pycache__/
 sensor_server/app/data/data_csv/*
 sensor_server/app/data/data_pkl/*
 sensor_server/app/data/data_raw/*
+.env
