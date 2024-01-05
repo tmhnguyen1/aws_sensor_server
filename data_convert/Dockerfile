@@ -6,7 +6,8 @@ RUN apt-get -y install sudo
 # Install AWS CLI dependencies
 RUN apt-get update && \
     apt-get install -y python3-pip groff python3 && \
-    pip3 install --upgrade awscli
+    pip3 install --upgrade awscli && \
+    pip3 install pandas
 RUN sudo apt install cron
 
 RUN mkdir /app
