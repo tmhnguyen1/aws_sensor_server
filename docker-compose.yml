@@ -42,3 +42,7 @@ services:
 volumes:
   sensordata:
     driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/ubuntu/aws_sensor_server/data
