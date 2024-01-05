@@ -58,7 +58,8 @@ def extract_sensor_data(input_folder, csv_output_path, pkl_output_path):
                     time_value = item['time']
                     item_values['time'] = time_value
                     sensor_data[item_name].append(item_values)
-            shutil.move(pkl_file, os.path.join(pkl_output_path, os.path.basename(pkl_file)))
+            # shutil.move(pkl_file, os.path.join(pkl_output_path, os.path.basename(pkl_file)))
+            os.remove(pkl_file)
         except (EOFError, pickle.UnpicklingError):
             print(f"Failed to load data from {pkl_file}")
             
