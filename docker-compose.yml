@@ -5,7 +5,7 @@ services:
   #   build: ./aws_sync
   #   container_name: aws_sync
   #   volumes:
-  #     - sensordata:/app/db
+  #     - sensordata:/app/data
   #   env_file:
   #     - .env
   #   network_mode: host
