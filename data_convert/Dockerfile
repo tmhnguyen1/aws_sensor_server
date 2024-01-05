@@ -5,7 +5,7 @@ RUN apt-get -y install sudo
 
 # Install AWS CLI dependencies
 RUN apt-get update && \
-    apt-get install -y python3-pip groff && \
+    apt-get install -y python3-pip groff python3 && \
     pip3 install --upgrade awscli
 RUN sudo apt install cron
 
