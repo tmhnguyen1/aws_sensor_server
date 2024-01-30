@@ -38,6 +38,8 @@ services:
       - .env
     restart: always
     network_mode: host
+    depends_on:
+      - sensor    
 
 volumes:
   sensordata:
