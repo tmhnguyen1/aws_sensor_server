@@ -28,7 +28,7 @@ services:
       - sensordata:/app/data/
     env_file:
       - .env
-    restart: on-failure
+    restart: always
     network_mode: host
 
   nginx:
